@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hotel/City Mapping</h1>
+<div class="search-container">
+    <input type="text" id="mapping-name" placeholder="Enter Hotel or City Name">
+    <button onclick="searchMapping()">Search</button>
+</div>
+<div id="loader" class="loader" style="display: none;"></div>
+<div id="mapping-results"></div>
+{% endblock %}
+

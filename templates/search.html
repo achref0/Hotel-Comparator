@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hotel Price Search</h1>
+<div class="search-container">
+    <input type="text" id="hotel-id" placeholder="Enter Hotel ID">
+    <button onclick="searchHotelPrices()">Search</button>
+</div>
+<div id="loader" class="loader" style="display: none;"></div>
+<div id="results"></div>
+<button onclick="resetSearch()" class="reset-button" style="display: none;">Reset</button>
+{% endblock %}
+
